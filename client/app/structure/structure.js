@@ -6,21 +6,26 @@
  */
 
 angular.module('titannicGeneratorApp')
-  .constant('INIT', {
+  .constant('APP', {
 
-
-    stateStructure: {
-      mainState: {
-        name: 'main',
-        url: '/',
-        presentation: 'MAIN_PAGE'
-      },
-      aboutState: {
-        name: 'about',
-        url: '/about',
-        presentation: 'ABOUT_PAGE'
+    'type': 'application',
+    'id': 'APP',
+    'document': '',
+    'value': {
+      stateStructure: {
+        mainState: {
+          name: 'main',
+          url: '/',
+          presentation: 'MAIN_PAGE'
+        },
+        aboutState: {
+          name: 'about',
+          url: '/about',
+          presentation: 'ABOUT_PAGE'
+        }
       }
     }
+
 
   });
 

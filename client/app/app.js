@@ -7,17 +7,17 @@ angular.module('titannicGeneratorApp', [
   'ui.router',
   'ui.bootstrap'
 ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $injector, INIT) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $injector, APP) {
 
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
 
 
-    for(var state in INIT.stateStructure) {
+    for(var state in APP.value.stateStructure) {
 
-      if (INIT.stateStructure.hasOwnProperty(state)) {
+      if (APP.value.stateStructure.hasOwnProperty(state)) {
 
-        var currentState = INIT.stateStructure[state];
+        var currentState = APP.value.stateStructure[state];
         var currentPresentation = $injector.get(currentState.presentation).value;
 
         var currentTemplate = '';
