@@ -19,13 +19,6 @@ module.exports = function(app) {
   app.route('/*')
     .get(function(req, res) {
 
-      console.log('mooofdosoafsdodfsodsafd');
-      console.log('mooofdosoafsdodfsodsafd');
-      console.log('mooofdosoafsdodfsodsafd');
-      console.log('mooofdosoafsdodfsodsafd');
-      console.log('mooofdosoafsdodfsodsafd');
-      console.log('mooofdosoafsdodfsodsafd');
-
       res.header('Access-Control-Allow-Origin', '*');
       res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
       res.header('Access-Control-Allow-Headers', 'Content-Type');
